@@ -3,7 +3,7 @@
 /**
  * Extends the base form to Add Results to Session
  *
- * @author steve@clearbar.org
+ * @author steve [at] clearbar [fullstop] org
  */
 class FormBuilder_Session extends FormBuilder_Base
 {

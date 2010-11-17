@@ -4,7 +4,7 @@
  * Extends the base form to INSERT to DB
  * and to optionally pull initial values from DB, and update the Record
  *
- * @author steve@clearbar.org
+ * @author steve [at] clearbar [fullstop] org
  */
 class FormBuilder_Database extends FormBuilder_Base
 {

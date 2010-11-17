@@ -3,7 +3,7 @@
 /**
  *
  * Displays, Validates and Emails a form
- * @author steve@clearbar.org
+ * @author steve [at] clearbar [fullstop] org
  *
  */
 class FormBuilder_Base
