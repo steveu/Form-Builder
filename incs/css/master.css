@@ -1,0 +1,140 @@
+
+	/*	HTML / Body / Wrapper
+	 */
+
+	html {
+	}
+
+		body {
+			text-align: center;
+		}
+
+
+			.wrapper {
+				margin:     0 auto 40px auto;
+				text-align: left;
+				width:      700px;
+			}
+
+
+form.default {
+    background: #E9EAEC;
+    border: 1px solid #CACBCD;
+    border-radius: 9px;
+    padding: 25px 20px;
+    margin-top: 6px;
+}
+
+/*
+form.default fieldset {
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #bbb;
+}
+*/
+    form.default input.def, form.default textarea {
+        border: 1px solid #c6ced4;
+        background: #fff;
+        font-size: 1.1em;
+        padding: 5px 4px;
+        margin: 0 0 4px 0;
+        width: 340px;
+        background-image:
+            -webkit-gradient(
+                linear,
+                left top,
+                left bottom,
+                color-stop(0, rgb(235,237,238)),
+                color-stop(0.1, rgb(255,255,255)),
+                color-stop(1, rgb(255,255,255))
+            )
+        ;
+        background-image:
+            -moz-linear-gradient(
+                center top,
+                rgb(235,237,238) 0%,
+                rgb(255,255,255) 10%,
+                rgb(255,255,255) 100%
+            )
+        ;
+    }
+    form.default textarea {
+        height: 10em;
+        width: 440px;
+        margin-bottom: 0;
+        background-image:
+            -webkit-gradient(
+                linear,
+                left top,
+                left bottom,
+                color-stop(0, rgb(235,237,238)),
+                color-stop(0.02, rgb(255,255,255)),
+                color-stop(1, rgb(255,255,255))
+            )
+        ;
+        background-image:
+            -moz-linear-gradient(
+                center top,
+                rgb(235,237,238) 0%,
+                rgb(255,255,255) 2%,
+                rgb(255,255,255) 100%
+            )
+        ;
+    }
+    form.default textarea.address {
+        height: 5em;
+        width: 340px;
+    }
+    #login_form input.def {
+        width: 199px;
+    }
+    form.default input.error, form.default textarea.error { border-color: #E8644A; }
+    .default label {
+        display: block;
+        margin: 0;
+        padding: 3px 15px 1px 0;
+        float: left;
+        width: 120px;
+        text-align: right;
+        
+    }
+    #login_form label {
+        float: none;
+        width: auto;
+    }
+    .default label strong.short_error {
+        color: #D72515;
+        font-weight: normal;
+        font-size: .9em;
+    }
+    form.default p {
+        padding: 0 0 10px 0;
+        margin: 0;
+    }
+
+    .default button {
+        float: none;
+        margin: 2px 0 0 135px;
+    }
+
+    .default em.req {
+        color: #C60005;
+        font-size: 1.1em;
+
+        padding-top: 4px;
+    }
+
+    article.login .alert {
+        padding: 0;
+        border: none;
+        margin: 0;
+
+        padding: 10px;
+        margin: 0 0 10px 0;
+    }
+        article.login .alert ul,
+        #sidebar .alert ul { margin: 0; font-size: .9em; color: red; }
+
+a.btn, button.btn {
+
+}
