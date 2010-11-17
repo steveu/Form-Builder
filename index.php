@@ -6,7 +6,7 @@ require_once('incs/forms.php');
 
 
 // Forms
-$enquiryForm = new Des_Form_Base($formConfig['enquiry'], $formDefaults);
+$enquiryForm = new FormBuilder_Base($formConfig['enquiry'], $formDefaults);
 $enquiryForm->autoProcess();
 
 
