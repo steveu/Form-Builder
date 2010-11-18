@@ -99,7 +99,7 @@ class FormBuilder_Base
     // HTML to use for star indicator
     protected $starHTML = '<em class="req">*</em>';
 
-    // HTML to use for star indicator
+    // Text to insert after label
     protected $labelEnd = ':';
 
     // Extra HTML to add just before ending form tag
@@ -528,8 +528,13 @@ class FormBuilder_Base
 
                 $legend = $setArray['legend'];
 
-                // if legendWrap , wrap legend in tag
-                if ($this->legendWrap != '') {
+                // if the fieldset has a legend tag, use it
+                if ($setArray['legendWrap']) {
+                    $legend = str_replace('$$', $legend, $setArray['legendWrap']);
+                }
+
+                // else if the form has legendWrap , wrap legend in tag
+                elseif ($this->legendWrap != '') {
                     $legend = str_replace('$$', $legend, $this->legendWrap);
                 }
 
@@ -1687,6 +1692,7 @@ class FormBuilder_Base
             return $val;
         }
         elseif(isset($field['initial'])) {
+
             return $field['initial'];
         }
         else {

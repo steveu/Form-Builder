@@ -7,6 +7,7 @@
 
 		body {
 			text-align: center;
+            font-size: 14px;
 		}
 
 
@@ -16,125 +17,43 @@
 				width:      700px;
 			}
 
+            h1, h2, h3, h4 {
+                color: #555;
+                margin: 1em 1em .5em 0;
+            }
 
-form.default {
-    background: #E9EAEC;
-    border: 1px solid #CACBCD;
-    border-radius: 9px;
-    padding: 25px 20px;
-    margin-top: 6px;
-}
+            h1 {
+                font-size: 22px;
+            }
+            h2 {
+                font-size: 18px;
+            }
 
-/*
-form.default fieldset {
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-    border-bottom: 1px solid #bbb;
-}
-*/
-    form.default input.def, form.default textarea {
-        border: 1px solid #c6ced4;
-        background: #fff;
-        font-size: 1.1em;
-        padding: 5px 4px;
-        margin: 0 0 4px 0;
-        width: 340px;
-        background-image:
-            -webkit-gradient(
-                linear,
-                left top,
-                left bottom,
-                color-stop(0, rgb(235,237,238)),
-                color-stop(0.1, rgb(255,255,255)),
-                color-stop(1, rgb(255,255,255))
-            )
-        ;
-        background-image:
-            -moz-linear-gradient(
-                center top,
-                rgb(235,237,238) 0%,
-                rgb(255,255,255) 10%,
-                rgb(255,255,255) 100%
-            )
-        ;
-    }
-    form.default textarea {
-        height: 10em;
-        width: 440px;
-        margin-bottom: 0;
-        background-image:
-            -webkit-gradient(
-                linear,
-                left top,
-                left bottom,
-                color-stop(0, rgb(235,237,238)),
-                color-stop(0.02, rgb(255,255,255)),
-                color-stop(1, rgb(255,255,255))
-            )
-        ;
-        background-image:
-            -moz-linear-gradient(
-                center top,
-                rgb(235,237,238) 0%,
-                rgb(255,255,255) 2%,
-                rgb(255,255,255) 100%
-            )
-        ;
-    }
-    form.default textarea.address {
-        height: 5em;
-        width: 340px;
-    }
-    #login_form input.def {
-        width: 199px;
-    }
-    form.default input.error, form.default textarea.error { border-color: #E8644A; }
-    .default label {
-        display: block;
-        margin: 0;
-        padding: 3px 15px 1px 0;
-        float: left;
-        width: 120px;
-        text-align: right;
-        
-    }
-    #login_form label {
-        float: none;
-        width: auto;
-    }
-    .default label strong.short_error {
-        color: #D72515;
-        font-weight: normal;
-        font-size: .9em;
-    }
-    form.default p {
-        padding: 0 0 10px 0;
-        margin: 0;
-    }
+div.alert {
+		background:    10px 11px no-repeat;
+		border:        1px solid;
+		clear:         both;
+		color:         #525252;
+		margin:        0 auto 20px;
+		padding:       10px 10px 10px 35px;
+	}
 
-    .default button {
-        float: none;
-        margin: 2px 0 0 135px;
-    }
+		div.done    { background-color: #e9fad0; background-image: url('/img/icons/tick.png');  border-color: #aee756; }
+		div.error   { background-color: #ffe3df; background-image: url('/img/icons/cross.png'); border-color: #f08a73; }
+		div.warning { background-color: #ffefb5; background-image: url('/img/icons/error.png'); border-color: #ffca0b; }
 
-    .default em.req {
-        color: #C60005;
-        font-size: 1.1em;
+		.alert h2 {
+			font-size:   1.6em;
+			font-weight: bold;
+			line-height: 1.1;
+			margin:      0 0 .7em;
+		}
 
-        padding-top: 4px;
-    }
+		.alert p {
+			margin-bottom: 0em;
+		}
 
-    article.login .alert {
-        padding: 0;
-        border: none;
-        margin: 0;
-
-        padding: 10px;
-        margin: 0 0 10px 0;
-    }
-        article.login .alert ul,
-        #sidebar .alert ul { margin: 0; font-size: .9em; color: red; }
-
-a.btn, button.btn {
-
-}
+		.alert ul {
+			margin:  0;
+			padding: 0;
+		}

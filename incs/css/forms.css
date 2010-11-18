@@ -1,0 +1,192 @@
+
+/*- Default Form Styles
+----------------------------------------------------------------------*/
+
+form.default {
+    border: 1px solid #CACBCD;
+    padding: 25px 20px;
+    margin-top: 10px;
+}
+
+    p.form_intro {
+        font-size: 1em;
+        margin: 0 0 20px 0;
+        color: #555;
+    }
+
+    form.default fieldset {
+        
+    }
+
+        h4.legend {
+            margin: 0 0 .5em 0;
+            font-weight: bold;
+            color: #333;
+            font-size: 1.3em;
+        }
+
+
+        form.default fieldset p.set_intro {
+            font-size: .95em;
+            color: #333;
+            margin: 0 0 18px 0;
+            padding: 0;
+        }
+
+        /*- Wrap Fields ----------*/
+        form.default fieldset p {
+            padding-bottom: 18px;
+            margin: 0;
+            clear: left;
+        }
+
+
+            /*- Labels ----------*/
+            form.default label {
+                display: block;
+                width: 145px;
+                float: left;
+                font-size: 1.05em;
+                padding: 6px 14px 0 0;
+                color: #333;
+                text-align: right;
+            }
+
+            form.default label.group_title {
+            }
+                em.form_hint {
+                    font-style: normal;
+                    font-size: .85em;
+                    color: #555;
+                    margin-left: 5px;
+                }
+
+            /*- Checkbox Label ----------*/
+            form.default label.cbox {
+                width: auto;
+                float: none;
+                padding: 0;
+                margin-left: 160px;
+                text-align: left;
+            }
+            /*- Radio Label ----------*/
+            form.default label.radio {
+                width: 95px;
+                padding-right: 0;
+                float: left;
+                font-size: 1em;
+                text-align: left;
+            }
+
+                /*- Required Marker ----------*/
+                em.req {
+                    color: red;
+                }
+
+                strong.short_error {
+                    font-weight: normal;
+                    font-size: .85em;
+                    background: #C80003;
+                    color: #fff;
+                    padding: 1px 5px;
+                    margin-left: 6px;
+                }
+
+
+                /*- Default Input / Textarea ----------*/
+                form.default input.def, form.default textarea {
+                    border: 1px solid #c6ced4;
+                    background: #fff;
+                    font-size: 1.1em;
+                    padding: 5px 4px;
+                    margin: 0 0 4px 0;
+                    width: 320px;
+                    background-image:
+                        -webkit-gradient(
+                            linear,
+                            left top,
+                            left bottom,
+                            color-stop(0, rgb(235,237,238)),
+                            color-stop(0.1, rgb(255,255,255)),
+                            color-stop(1, rgb(255,255,255))
+                        )
+                    ;
+                    background-image:
+                        -moz-linear-gradient(
+                            center top,
+                            rgb(235,237,238) 0%,
+                            rgb(255,255,255) 10%,
+                            rgb(255,255,255) 100%
+                        )
+                    ;
+                }
+                
+                form.default textarea {
+                    width: 420px;
+                    height: 10em;
+                    background-image:
+                        -webkit-gradient(
+                            linear,
+                            left top,
+                            left bottom,
+                            color-stop(0, rgb(235,237,238)),
+                            color-stop(0.02, rgb(255,255,255)),
+                            color-stop(1, rgb(255,255,255))
+                        )
+                    ;
+                    background-image:
+                        -moz-linear-gradient(
+                            center top,
+                            rgb(235,237,238) 0%,
+                            rgb(255,255,255) 2%,
+                            rgb(255,255,255) 100%
+                        )
+                    ;
+                }
+
+                form.default input.medium { width: 250px; }
+                form.default input.small-medium { width: 200px; }
+                form.default input.small { width: 150px; }
+                form.default input.tiny { width: 30px; }
+
+
+                /*- Select ----------*/
+                form.default select {
+                    margin-right: 5px;
+                    margin-top: 4px;
+
+                }
+
+                /*- Checkbox ----------*/
+                form.default label.cbox input {
+                    margin: 0 5px 2px 0;
+                    padding: 0;
+                    border: none;
+                }
+
+                /*- Error Styles ----------*/
+                form.default input.error, form.default textarea.error {
+                    border-color: #f77 #f77 #f77 #f77;
+                    background: #fff;
+                }
+
+
+
+    /*- Buttons ----------*/
+    .default .btn {
+        float: none;
+        margin: 5px 0 15px 160px;
+        padding: 3px 5px;
+    }
+    .default .button:hover {
+    }
+
+
+    .default .file {
+        font-size: 17px;
+        padding: 8px 12px;
+    }
+
+
+
+    
