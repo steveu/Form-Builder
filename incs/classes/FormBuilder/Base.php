@@ -699,9 +699,14 @@ class FormBuilder_Base
     public function process()
     {
 
-        if ($this->sendEmail()) {
-            return true;
+        try {
+            $this->sendEmail();
+        } catch (Exception $e) {
+            echo 'Caught exception: ',  $e->getMessage(), "\n";
         }
+
+        return true;
+
 
     }
 
@@ -802,10 +807,35 @@ class FormBuilder_Base
             $emailTemplate['email_toname'] = $this->adminEmail['toName'];
             $emailTemplate['email_toemail'] = $this->adminEmail['toEmail'];
 
+
+            $emailTemplate['headers'] = "MIME-Version: 1.0\r\n";
+            $emailTemplate['headers'].= "From: ".$emailTemplate['email_name']." <".$emailTemplate['email_email'].">\r\n";
+            $emailTemplate['headers'].= "Reply-To: ".$emailTemplate['email_name']." <".$emailTemplate['email_email'].">\r\n";
+            $emailTemplate['headers'].= "X-Mailer: Just My Server";
+
+            $emailReply = "-f" . $emailTemplate['email_email'];
+
+            if(mail($emailTemplate['email_toemail'], $emailTemplate['email_subject'], $emailTemplate['email_message'],$emailTemplate['headers'],$emailReply)) {
+
+                return true;
+            }
+            else {
+                throw new Exception("Email not sent");
+            }
+
+            
+
+        
+            //else {
+                
+            //}
+            /*
             if (emails_send($siteConfig,$emailTemplate)) {
 
                 return true;
             }
+            */
+
         }
 
         return false;
