@@ -40,6 +40,11 @@ form.default {
             clear: left;
         }
 
+        .default legend.group_title {
+            color: #333;
+            font-size: 1.05em;
+        }
+
 
             /*- Labels ----------*/
             form.default label {
@@ -58,7 +63,9 @@ form.default {
                     font-style: normal;
                     font-size: .85em;
                     color: #555;
-                    margin-left: 5px;
+                    margin-left: 0px;
+                    padding: 3px 0 0 0;
+                    display: block;
                 }
 
             /*- Checkbox Label ----------*/

@@ -44,7 +44,7 @@ $formConfig = array(
     */
     'enquiry'  =>  array(
 
-        'title'         =>  'Enquiry Form',
+        'title'         =>  'Example Form',
         'id'            =>  'form_enquiry',
         'buttonTitle'   =>  'Send Enquiry',
         'redirect'      =>  'test',
@@ -61,6 +61,14 @@ $formConfig = array(
                     'email' => array(
                         'type'=>'text', 'label'=>'Email Address', 'req'=>true,
                         'regex'=>'email', 'initial'=>'must be valid',
+                    ),
+                    'username' => array(
+                        'type'=>'text', 'label'=>'Username', 'req'=>true,
+                        'hint'=>'3-20 characters',
+                        'min'=>3,
+                        'max'=>20,
+                        'class'=>'small',
+                        'regex'=>'username',
                     ),
                     'phone' => array(
                         'type'=>'text', 'label'=>'Telephone', 'req'=>false,
@@ -96,7 +104,7 @@ $formConfig = array(
 
             'pick_one' =>  array(
                 'legend'    =>  'Pick at least 1 sport',
-                'legendWrap' => '<label class="group_title">$$:</label>',
+                'legendWrap' => '<legend class="group_title"><em class="req">*</em> $$:</legend>',
                 'fields'    =>  array(
                     'football' => array(
                         'type'=>'checkbox', 'label'=>'Football',
@@ -131,8 +139,8 @@ $formConfig = array(
             ),
         ),
 
-        'showShortErrors' => true,
-        'showLongErrors' => false,
+        'showShortErrors' => false,
+        'showLongErrors' => true,
 
     ),
 
